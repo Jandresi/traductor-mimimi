@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,500&display=swap');
+
+body {
+    /* background-color: #edeff9; */
+    background-color: #262727;
+    font-family: Verdana, Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 3em;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 16px;
+    font-family: fi;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.tarjeta {
+    width: 40%;
+    height: 400px;
+    margin-top: 24px;
+    background-color: #fafafa;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 10px 10px 14px #656565;
+    border: 1px solid #ededed;
+    font-size: 1.25em;
+}
+
+.superior {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #03045e;
+    border-bottom: 2px solid #03045e;
+    padding: 8px;
+}
+
+.superior img {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: -4px;
+    height: 1.5em;
+}
+
+textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    min-height: 300px;
+    border: 0;
+}
+
+.texto {
+    padding: 12px;
+    width: 95%;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.logo {
+    color: #fbd214;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    padding: auto;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+@media (max-width: 850px) {
+    .titulo {
+        font-size: 2em;
+    }
+    .tarjetas {
+        gap: 20px;
+    }
+    .tarjeta {
+        width: 80%;
+        height: 300px;
+        font-size: 1em;
+    }
+    .superior {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo {
+        font-size: 1.75em;
+    }
+    .tarjetas {
+        gap: 0;
+    }
+    .tarjeta {
+        height: 250px;
+        font-size: 0.9em;
+    }
+}
